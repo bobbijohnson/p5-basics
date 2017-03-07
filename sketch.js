@@ -1,7 +1,6 @@
-var s = 30;
-var b = 20;
-var newHeight = s + b;
-var newWidth = s + b;
+var newWidth = 50;
+var newHeight = 50;
+
 
 //setup function executes once
 function setup(){
@@ -13,9 +12,11 @@ function setup(){
 function draw(){
   //background(50);
   if(mouseIsPressed){
-    noStrSoke();
-  fill(10,10,20,20);
-  ellispe(mouseX,mouseY,newWidth,newHeight);
+    noStroke();
+  fill(50,150,300,50);
+  rect(mouseX,mouseY,newWidth,newHeight);
+  fill(800,60,100,50);
+  ellipse(mouseX,mouseY,newWidth,newHeight);
   }
   
   
